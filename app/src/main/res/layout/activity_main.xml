@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_bottom"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_commit"
+            android:gravity="center"
+            android:text="(推荐WIFI连接)调系统打印-网页内容转文字"
+            android:background="@drawable/shape_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="240dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_commit_1"
+            android:gravity="center"
+            android:text="(WIFI连接)调系统打印-网页内容转图片"
+            android:background="@drawable/shape_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="240dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_commit_2"
+            android:gravity="center"
+            android:text="(不推荐)WIFI连接自己去写打印"
+            android:background="@drawable/shape_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="240dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_commit_3"
+            android:gravity="center"
+            android:text="跳转蓝牙连接打印机打印"
+            android:background="@drawable/shape_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="240dp"
+            android:layout_height="34dp" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_above="@+id/layout_bottom"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

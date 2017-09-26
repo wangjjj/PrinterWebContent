@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_bottom"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_commit"
+            android:gravity="center"
+            android:text="打印"
+            android:background="@drawable/shape_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_width="240dp"
+            android:layout_height="34dp" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_above="@+id/layout_bottom"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>
